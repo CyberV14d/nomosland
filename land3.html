@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomos | Platformă Avansată pentru Cercetare și Documentare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1.2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--dark);
+            letter-spacing: -1px;
+        }
+
+        .logo span { color: var(--primary); }
+
+        /* Hero Section */
+        header {
+            padding: 6rem 10%;
+            text-align: center;
+            background: radial-gradient(circle at top, #f1f5f9 0%, #fff 100%);
+        }
+
+        h1 {
+            font-size: 3.8rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            max-width: 750px;
+            margin: 0 auto 3rem;
+            color: #64748b;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.1rem 2.8rem;
+            background-color: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1e3a8a;
+            box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.2);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            padding: 2.5rem;
+            border-radius: 16px;
+            background: #fff;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+        }
+
+        /* Methodology Section */
+        .methodology {
+            background-color: var(--dark);
+            color: #fff;
+            padding: 7rem 10%;
+            text-align: center;
+        }
+
+        .methodology h2 { font-size: 2.2rem; margin-bottom: 2rem; }
+        .methodology p { max-width: 850px; margin: 0 auto; opacity: 0.85; font-size: 1.2rem; line-height: 1.8; }
+
+        /* Footer */
+        footer {
+            padding: 5rem 10%;
+            text-align: center;
+            background: #f8fafc;
+        }
+
+        .contact-box {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            .features { padding: 4rem 5%; }
+            nav { padding: 1rem 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NOMOS<span>.</span></div>
+        <a href="#contact" class="cta-button" style="padding: 0.7rem 1.5rem; font-size: 0.9rem;">Solicită Demo</a>
+    </nav>
+
+    <header>
+        <h1>Cercetare riguroasă.<br>Informație și precizie.</h1>
+        <p class="subtitle">
+            Nomos este un instrument specializat pentru organizarea informațiilor, proiectat să optimizeze fluxul de colectare, analiză și structurare a datelor pentru specialiștii în cercetare.
+        </p>
+        <div class="cta-group">
+            <a href="#contact" class="cta-button">Începe Testarea Gratuită</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>📊 Arhivare Analitică</h3>
+            <p>Capturați date din surse multiple și organizați-le într-o bază de date structurată, păstrând trasabilitatea completă a surselor.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🧠 Mapare Cognitivă</h3>
+            <p>Vizualizați conexiunile dintre informații și identificați tipare relevante prin instrumentele noastre de indexare avansată.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📄 Draft Professional</h3>
+            <p>Generați structuri de raport și articole științifice integrând automat notele și referințele colectate în etapa de documentare.</p>
+        </div>
+    </section>
+
+    <section class="methodology">
+        <h2>Eficiență în procesul de documentare</h2>
+        <p>
+            Nomos a fost dezvoltat pentru a oferi cercetătorilor o alternativă robustă la metodele tradiționale de organizare a informației. Ne concentrăm pe reducerea timpului pierdut în gestionarea fragmentată a surselor, permițându-vă să vă concentrați resursele pe analiza critică și generarea de concluzii valoroase.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-box">
+            <h3 style="margin-bottom: 1rem; color: var(--dark);">Sunteți interesați de o colaborare?</h3>
+            <p style="margin-bottom: 1.5rem;">Oferim acces gratuit pentru organizații și echipe de cercetare dornice să testeze programul nostru.</p>
+            <a>nomos.contact@proton.me</a>
+        </div>
+        <p style="font-size: 0.9rem; color: #64748b;">&copy; 2026 Nomos</p>
+    </footer>
+
+</body>
+</html>
